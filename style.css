@@ -31,8 +31,14 @@
         align-items: flex-start;
         padding: 20px;
         overflow: hidden;
+        position: relative;
     }
-
+    
+    .box svg {
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+    }
     .box p {
         margin: 0;
         text-align: left;
