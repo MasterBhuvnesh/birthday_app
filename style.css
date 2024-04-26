@@ -4,6 +4,25 @@
         margin: 0;
         font-family: 'Poppins', sans-serif;
     }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+        /* background-color: #f0f0f0; Adjust as needed */
+        margin-bottom: 20px; /* Add margin at the bottom */
+    }
+    
+    .add-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .add-btn svg {
+        width: 35px;
+        height: 35px;
+    }
 
     .container {
        display: flex;
@@ -33,12 +52,36 @@
         overflow: hidden;
         position: relative;
     }
-    
-    .box svg {
+
+    .box-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
         position: absolute;
-        bottom: 10%;
-        right: 10%;
+        bottom: 10px;
+        right: 10px;
     }
+    
+    .box-btn svg {
+        width: 24px;
+        height: 24px;
+        /* stroke: #000000; */
+        fill: none;
+    }
+
+    #iconButton svg {
+        width: 28px;
+        height: 28px;
+    }
+    
+    #iconButton:hover #originalIcon {
+        display: none; /* Hide original icon on hover */
+    }
+    
+    #iconButton:hover #hoverIcon {
+        display: initial; /* Show hover icon on hover */
+    }
+    
     .box p {
         margin: 0;
         text-align: left;
@@ -61,7 +104,7 @@
         }
 
         .box {
-            width: calc(100% - 40px);
+            width: calc(100% - 20px);
             margin-right: 0;
             margin-left: 0;
         }
@@ -90,3 +133,7 @@
     .box:nth-child(6) {
         background-color: #feb8b8;
     }
+
+
+
+
